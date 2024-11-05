@@ -4,7 +4,9 @@ import { Input, Modal, Form, Select, message, Table, DatePicker } from "antd";
 import axios from 'axios';
 import Spinner from '../components/Spinner';
 import Analytics from '../components/Analytics';
-import moment from "moment"; 
+import moment from "moment";
+import '../styles/HomePage.css';
+
 import {UnorderedListOutlined,AreaChartOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons'
 const {RangePicker} = DatePicker;
 
@@ -91,8 +93,6 @@ const HomePage = () => {
     }
   };
 
-
-
   // form handling
   const handleSubmit = async (values) => {
     try {
@@ -158,10 +158,10 @@ const HomePage = () => {
           onClick = {() => setViewData("analytics")}/> 
         </div>
 
-        <button className="btn btn-primary" onClick={() => setShowModal(true)}>
-          Add New
-        </button>
-
+        <button className="btn btn-add-new" onClick={() => setShowModal(true)}>
+  Add New
+</button>
+      
       </div>
       <div className="content">
         {viewData === 'table' ? (<Table columns={columns} dataSource={allTransection} /> ) : (<Analytics allTransection={allTransection}/>

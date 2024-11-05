@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Layout */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.filters h6 {
+    font-size: 16px;
+    color: #666;
+}
+
+.select-style {
+    min-width: 100px;
+}
+
+/* Buttons */
+.btn-add-new {
+    background-color: #1e1f1f; 
+    color: #fff;
+    border: none;
+    padding: 4px 10px; 
+    border-radius: 6px;
+    width: 80px;
+    font-size: 12px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .btn-add-new:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);
+  }
+  
+
+/* Compact Button Style */
+/* .btn-compact {
+    padding: 15px 24px; 
+    font-size: 12px; 
+    min-width: unset; 
+    height: 30px; 
+    line-height: 1.5;
+    transition: transform 0.2s; 
+}
+
+.btn-compact:hover {
+    transform: scale(1.05);
+} */
+
+
+/* Table */
+.content {
+    margin-top: 24px;
+}
+
+.table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ant-table-row {
+    transition: background-color 0.3s;
+}
+
+.ant-table-row:hover {
+    background-color: #e6f7ff;
+}
+
+/* Icons */
+.switch-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.switch-icons .anticon svg {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.active-icon {
+    color: #4a4b4c;
+}
+
+.inactive-icon {
+    color: #888;
+}
+
+/* Margin helper */
+.mx-2 {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* Modal */
+.ant-modal-content {
+    border-radius: 10px;
+}
+
+.ant-modal-header {
+    border-radius: 10px 10px 0 0;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.ant-modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ant-modal-footer {
+    border-top: none;
+}
+
+/* Form */
+.form-item label {
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-item input,
+.form-item select {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Flex Utility */
+.d-flex {
+    display: flex;
+    gap: 12px;
+}
+
+.d-flex .btn {
+    margin-top: 12px;
+}
+
+/* Card (Analytics) */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f1f1f1;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 20px;
+    color: #444;
+    font-size: 15px;
+}

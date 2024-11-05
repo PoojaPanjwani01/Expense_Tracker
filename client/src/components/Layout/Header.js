@@ -33,16 +33,15 @@ const Header = () => {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <Link className="navbar-brand" to="/">
-              Expense Management
+            <Link className="navbar-brand" to="/" style={{ fontFamily: 'Patrick Hand, cursive' }}>
+              Expense Tracker💹
             </Link>
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-1 mb-lg-0">
               <li className="nav-item">
-                {" "}
-                <p className="nav-link">{loginUser && loginUser.name}</p>{" "}
+                <p className="nav-link">{loginUser && loginUser.name}</p>
               </li>
               <li className="nav-item">
-                <button className="btn btn-primary" onClick={logoutHandler}>
+                <button className="btn btn-primary rounded-pill" onClick={logoutHandler}>
                   Logout
                 </button>
               </li>
